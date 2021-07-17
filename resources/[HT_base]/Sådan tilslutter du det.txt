@@ -1,0 +1,20 @@
+-------------- [ SERVER ] --------------
+
+HT = nil
+
+TriggerEvent('HT_base:getBaseObjects', function(obj) HT = obj end)
+
+----------------------------------------
+
+-------------- [ CLIENT ] --------------
+
+HT = nil
+
+Citizen.CreateThread(function()
+    while HT == nil do
+        TriggerEvent('HT_base:getBaseObjects', function(obj) HT = obj end)
+        Citizen.Wait(0)
+    end
+end)
+
+----------------------------------------
