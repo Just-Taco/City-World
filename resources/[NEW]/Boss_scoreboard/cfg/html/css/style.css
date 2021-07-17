@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* make body full page */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: fantasy;
+}
+/*############################*/
+/*####  Layout   #####*/
+.main{
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    width: 35%;
+    height: 70%;
+    border: 4px solid rgba(204, 0, 0, 0);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.exit_btn{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 4.5%;
+    height: 4%;
+    text-align: center;
+    color: rgb(109, 109, 109);
+    font-size: 2.5vh;
+    border: 4px solid rgb(109, 109, 109);
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.exit_btn:hover{
+    color: rgb(156, 0, 0);
+    border-color: rgb(156, 0, 0);
+}
+.title{
+    display: flex;
+    width: 100%;
+    height: 10%;
+}
+/*############################*/
+/*####  Title Section   #####*/
+#icon_1{
+    margin-left: 5%;
+    margin-top: .6%;
+    width: 15%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spin 6s infinite linear;
+}
+#name{
+    margin-left: 5%;
+    margin-top: 1%;
+    width: 50%;
+    height: 85%;
+    text-align: center;
+}
+#icon_2{
+    margin-left: 5%;
+    margin-top: .6%;
+    width: 15%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spin 6s infinite linear;
+}
+@keyframes spin {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+/*############################*/
+/*####  job bar Section   #####*/
+.bar{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    height: 4%;
+}
+.main_bar{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.extra_bar{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.drop_down{
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    width: 5%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.job{
+    width: 20%;
+    height: 100%;
+    margin-left: 3.5%;
+    font-size: 2vh;
+    display: flex;
+}
+.job_title{
+    margin-top: 2%;
+}
+.job_count{
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+}
+.extra_job{
+    width: 20%;
+    height: 100%;
+    margin-left: 3.5%;
+    font-size: 2vh;
+    display: flex;
+}
+.extra_job_title{
+    margin-top: 2%;
+}
+.extra_job_count{
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+}
+/*############################*/
+/*####  table Section   #####*/
+.catagories{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 50%;
+    height: 5%;
+    display: flex;
+    font-size: 2vh;
+}
+#cat_id{
+    margin-left: 1.5%;
+}
+#cat_name{
+    margin-left: 70%;
+}
+#table {
+	position: relative;
+    top: 9%;
+    left: 8%;
+    height: 76%;
+    width: 85%;
+}
+table {
+	max-height: 10%;
+	text-align: left;
+}
+th, td {
+	font-weight: 10%;
+	text-align: center;
+	padding-left: 9px;
+}
+.profile{
+    position: relative;
+    top: 0%;
+    width: 95%;
+    height: 70px;
+    border: 4px solid;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(36, 36, 36);
+}
+.profile:hover{
+    background-color: rgb(53, 53, 53);
+}
+.profile:focus, .extra_info{
+    height: 160px;
+}
+.player_info{
+    position: relative;
+    top: 10%;
+    padding-bottom: 0%;
+    width: 100%;
+    display: flex;
+    font-size: 4vh;
+    color: rgb(204, 204, 204);
+}
+.extra_info{
+    position: relative;
+    top: 18%;
+    width: 100%;
+    font-size: 2vh;
+    text-align: left;
+    display: flex;
+    color: rgb(204, 204, 204);
+}
+#player_id{
+    width: 30%;
+}
+#player_name{
+    width: 70%;
+}
+.player_job{
+    width: 50%;
+    text-align: center;
+}
+.player_phone{
+    width: 50%;
+    text-align: center;
+}
+/*############################*/
+/*####  bottom bar Section   #####*/
+.footer_bar{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 5%;
+}
+.online_bar{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 60%;
+    height: 80%;
+    display: flex;
+}
+.online{
+    width: auto;
+    height: 100%;
+    margin-left: 6%;
+    font-size: 2vh;
+    display: flex;
+}
+.online_title{
+    margin-top: 2%;
+}
+.online_count{
+    width: auto;
+    margin-top: 2%;
+    margin-left: 8%;
+    text-align: center;
+}
+.discord{
+    position: absolute;
+    top: 14%;
+    right: 0%;
+    width: 35%;
+    height: 80%;
+    display: flex;
+}
+#discord_link{
+    width: 32%;
+    height: 100%;
+    margin-left: 4%;
+    font-size: 2vh;
+    text-decoration: none;
+}
